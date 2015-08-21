@@ -91,13 +91,27 @@
     " In your .vimrc.before.local file
     " list only the plugin groups you will use
     if !exists('g:spf13_bundle_groups')
-        let g:spf13_bundle_groups=['general', 'writing', 'neocomplete', 'programming', 'php', 'ruby', 'python', 'javascript', 'html', 'misc',]
+        "let g:spf13_bundle_groups=['general', 'writing', 'youcompleteme', 'programming', 'php', 'ruby', 'python', 'javascript', 'html', 'misc',]
+        let g:spf13_bundle_groups=['general', 'youcompleteme', 'programming', 'ruby', 'python', 'javascript', 'html', 'misc', 'user_defined',]
     endif
 
     " To override all the included bundles, add the following to your
     " .vimrc.bundles.local file:
     "   let g:override_spf13_bundles = 1
+
+    " Switch to powerline
+        let g:spf13_use_powerline = 1
+
     if !exists("g:override_spf13_bundles")
+
+    " User-Defined {
+        if count(g:spf13_bundle_groups, 'user_defined')
+            Bundle 'xolox/vim-easytags'
+            Bundle 'xolox/vim-misc'
+            Bundle 'rdnetto/YCM-Generator'
+            "Bundle 'Raimondi/delimitMate'
+        endif
+    "}
 
     " General {
         if count(g:spf13_bundle_groups, 'general')
@@ -157,7 +171,7 @@
             Bundle 'tpope/vim-commentary'
             Bundle 'godlygeek/tabular'
             if executable('ctags')
-                Bundle 'majutsushi/tagbar'
+                "Bundle 'majutsushi/tagbar'
             endif
         endif
     " }
