@@ -109,6 +109,7 @@
             Bundle 'xolox/vim-easytags'
             Bundle 'xolox/vim-misc'
             Bundle 'rdnetto/YCM-Generator'
+            Bundle 'peterhoeg/vim-qml'
             "Bundle 'Raimondi/delimitMate'
         endif
     "}
