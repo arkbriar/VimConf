@@ -1226,9 +1226,15 @@
 
 let g:syntastic_cpp_compiler = 'g++' "change the compiler to g++ to support c++11
 let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libc++' "set the options of g++ to support c++11
-let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
-set tags=./tags;
-let g:easytags_dynamic_files = 1
+let g:ycm_global_ycm_extra_conf = '~/Documents/.ycm_extra_conf.py'
+"let g:easytags_dynamic_files = 1 "Turned off due to the large qt tag file
+let g:easytags_auto_highlight = 0
+let g:easytags_auto_update = 0
+let g:easytags_file = '~/.vimtags'
+let g:easytags_async = 1
+
+set tags=./.tags;,~/Documents/.qtvtags;,~/.vimtags
+
 map <Leader>/ <Plug>(easymotion-sn)
 
 set laststatus=2 " Always display the statusline in all windows
