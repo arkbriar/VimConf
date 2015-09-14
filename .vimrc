@@ -1227,6 +1227,8 @@
 let g:syntastic_cpp_compiler = 'g++' "change the compiler to g++ to support c++11
 let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libc++' "set the options of g++ to support c++11
 let g:ycm_global_ycm_extra_conf = '~/Documents/.ycm_extra_conf.py'
+"let g:ycm_filepath_completion_use_working_dir=1
+
 "let g:easytags_dynamic_files = 1 "Turned off due to the large qt tag file
 let g:easytags_auto_highlight = 0
 let g:easytags_auto_update = 0
@@ -1251,7 +1253,11 @@ set lazyredraw
 let g:ycm_key_invoke_completion = '<C-UP>'
 
 let g:AutoPairsFlyMode = 1
-let g:AutoPairsShortcutBackInsert = 'i'
+if has('gui_running')
+    let g:AutoPairsShortcutBackInsert = '<A-i>'
+else 
+    let g:AutoPairsShortcutBackInsert = 'i'
+endif
 
 inoremap <A-h> <Esc>h
 inoremap <A-j> <Esc>j
