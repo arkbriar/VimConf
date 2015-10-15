@@ -217,7 +217,7 @@
 
     set backspace=indent,eol,start  " Backspace for dummies
     set linespace=0                 " No extra spaces between rows
-    set nonumber                      " Line numbers on
+    set number                      " Line numbers on
     set showmatch                   " Show matching brackets/parenthesis
     set incsearch                   " Find as you type search
     set hlsearch                    " Highlight search terms
@@ -1047,7 +1047,7 @@
         set lines=40                " 40 lines of text instead of 24
         if !exists("g:spf13_no_big_font")
             if LINUX() && has("gui_running")
-                set guifont=Ubuntu\ Mono\ derivative\ Powerline\ Regular\ 12,Andale\ Mono\ Regular\ 12,Menlo\ Regular\ 11,Consolas\ Regular\ 12,Courier\ New\ Regular\ 14
+                set guifont=Ubuntu\ Mono\ derivative\ Powerline\ Regular\ 11,Andale\ Mono\ Regular\ 12,Menlo\ Regular\ 11,Consolas\ Regular\ 12,Courier\ New\ Regular\ 14
             elseif OSX() && has("gui_running")
                 set guifont=Andale\ Mono\ Regular:h12,Menlo\ Regular:h11,Consolas\ Regular:h12,Courier\ New\ Regular:h14
             elseif WINDOWS() && has("gui_running")
@@ -1250,21 +1250,23 @@ syntax sync maxlines=2048
 
 set lazyredraw
 
+nmap <F8> :TagbarToggle<CR>
+
 let g:ycm_key_invoke_completion = '<C-UP>'
 
 let g:AutoPairsFlyMode = 1
 if has('gui_running')
     let g:AutoPairsShortcutBackInsert = '<A-i>'
+    inoremap <A-h> <Esc>h
+    inoremap <A-j> <Esc>j
+    inoremap <A-k> <Esc>k
+    inoremap <A-l> <Esc>l
+    inoremap <A-u> <Esc>u
+    inoremap <A-o> <Esc>o
 else 
     let g:AutoPairsShortcutBackInsert = 'i'
 endif
 
-inoremap <A-h> <Esc>h
-inoremap <A-j> <Esc>j
-inoremap <A-k> <Esc>k
-inoremap <A-l> <Esc>l
-inoremap <A-u> <Esc>u
-inoremap <A-o> <Esc>o
 
 "let g:airline_powerline_fonts=1
 "set timeoutlen=50

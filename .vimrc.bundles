@@ -110,6 +110,7 @@
             Bundle 'xolox/vim-misc'
             Bundle 'rdnetto/YCM-Generator'
             Bundle 'peterhoeg/vim-qml'
+            Bundle 'fatih/vim-go'
             "Bundle 'Raimondi/delimitMate'
         endif
     "}
@@ -173,7 +174,7 @@
             Bundle 'tpope/vim-commentary'
             Bundle 'godlygeek/tabular'
             if executable('ctags')
-                "Bundle 'majutsushi/tagbar'
+                Bundle 'majutsushi/tagbar'
             endif
         endif
     " }
