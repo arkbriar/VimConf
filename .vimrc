@@ -1267,6 +1267,14 @@ else
     let g:AutoPairsShortcutBackInsert = 'i'
 endif
 
+let g:go_fmt_autosave = 0
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+let g:go_fmt_command = "goimports"
+
 
 "let g:airline_powerline_fonts=1
 "set timeoutlen=50
