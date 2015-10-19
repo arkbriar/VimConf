@@ -92,7 +92,7 @@
     " list only the plugin groups you will use
     if !exists('g:spf13_bundle_groups')
         "let g:spf13_bundle_groups=['general', 'writing', 'youcompleteme', 'programming', 'php', 'ruby', 'python', 'javascript', 'html', 'misc',]
-        let g:spf13_bundle_groups=['general', 'youcompleteme', 'programming', 'ruby', 'python', 'javascript', 'html', 'misc', 'user_defined',]
+        let g:spf13_bundle_groups=['general', 'youcompleteme', 'programming', 'python', 'misc', 'user_defined', 'go', ]
     endif
 
     " To override all the included bundles, add the following to your
@@ -110,7 +110,6 @@
             Bundle 'xolox/vim-misc'
             Bundle 'rdnetto/YCM-Generator'
             Bundle 'peterhoeg/vim-qml'
-            Bundle 'fatih/vim-go'
             "Bundle 'Raimondi/delimitMate'
         endif
     "}
