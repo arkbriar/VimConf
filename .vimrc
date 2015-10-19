@@ -1277,6 +1277,8 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:go_fmt_command = "goimports"
 
+" Set noexpandtab with speicific filetype
+autocmd FileType markdown set noexpandtab
 
 "let g:airline_powerline_fonts=1
 "set timeoutlen=50
