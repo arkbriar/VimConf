@@ -1,7 +1,6 @@
-This is a customized configuration file for vim. It is based on spf13-vim
-[spf13-vim](https://github.com/spf13/spf13-vim)
+This is a customized configuration for vim based on Steve Francia's Vim Distribution.
 
-Authored by SHJD.
+Maintained by ArkBriar.
 
 # spf13-vim : Steve Francia's Vim Distribution
 
