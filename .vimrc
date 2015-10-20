@@ -1257,6 +1257,8 @@ nmap <F8> :TagbarToggle<CR>
 let g:ycm_key_invoke_completion = '<C-UP>'
 
 let g:AutoPairsFlyMode = 1
+let g:AutoPairsOnlyWhitespace = 1
+
 if has('gui_running')
     let g:AutoPairsShortcutBackInsert = '<A-i>'
     inoremap <A-h> <Esc>h
