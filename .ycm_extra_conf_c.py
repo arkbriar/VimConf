@@ -23,20 +23,15 @@ flags = [
 # a "-std=<something>".
 # For a C project, you would set this to something like 'c99' instead of
 # 'c++11'.
-'-std=c++11',
+'-std=c11',
 # ...and the same thing goes for the magic -x option which specifies the
 # language that the files to be compiled are written in. This is mostly
 # relevant for c++ headers.
 # For a C project, you would set this to 'c' instead of 'c++'.
 '-x',
-'c++',
-
-'-I', '/home/homura/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm',
-'-I', '/home/homura/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter',
+'c',
 
 '-I', '/usr/include',
-'-I', '/usr/include/c++/5',
-'-I', '/usr/include/c++/5/x86_64-suse-linux',
 
 '-I', '.',
 '-I', 'include',
