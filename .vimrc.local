@@ -1,8 +1,8 @@
 set nonumber
 let g:syntastic_cpp_compiler = 'g++' "change the compiler to g++ to support c++11
 let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libc++' "set the options of g++ to support c++11
-autocmd FileType cpp let g:ycm_global_ycm_extra_conf = '~/Documents/.ycm_extra_conf_cpp.py'
-autocmd FileType c let g:ycm_global_ycm_extra_conf = '~/Documents/.ycm_extra_conf_c.py'
+autocmd FileType cpp let g:ycm_global_ycm_extra_conf = '~/.spf13-vim-3/.ycm_extra_conf_cpp.py'
+autocmd FileType c let g:ycm_global_ycm_extra_conf = '~/.spf13-vim-3/.ycm_extra_conf_c.py'
 "let g:ycm_filepath_completion_use_working_dir=1
 
 "let g:easytags_dynamic_files = 1 "Turned off due to the large qt tag file
