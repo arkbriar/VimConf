@@ -110,6 +110,7 @@
             Bundle 'xolox/vim-misc'
             Bundle 'rdnetto/YCM-Generator'
             Bundle 'peterhoeg/vim-qml'
+            Bundle 'Shougo/unite.vim'
             "Bundle 'Raimondi/delimitMate'
         endif
     "}
