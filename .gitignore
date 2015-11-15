@@ -2,3 +2,4 @@
 *.pyc
 *._*
 .vim/
+.ycm_extra_conf_qt5.py
