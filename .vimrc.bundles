@@ -124,6 +124,7 @@
             Bundle 'tpope/vim-repeat'
             "Bundle 'jiangmiao/auto-pairs'
             Bundle 'ArkBriar/auto-pairs'
+            Bundle 'rhysd/conflict-marker.vim'
             Bundle 'ctrlpvim/ctrlp.vim'
             Bundle 'tacahiroy/ctrlp-funky'
             Bundle 'terryma/vim-multiple-cursors'
@@ -174,6 +175,7 @@
             Bundle 'scrooloose/nerdcommenter'
             Bundle 'tpope/vim-commentary'
             Bundle 'godlygeek/tabular'
+            Bundle 'luochen1990/rainbow'
             if executable('ctags')
                 Bundle 'majutsushi/tagbar'
             endif
