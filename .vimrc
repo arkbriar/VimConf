@@ -513,7 +513,7 @@
 
             " Some convenient mappings
             inoremap <expr> <Esc>      pumvisible() ? "\<C-e>\<Esc>" : "\<Esc>"
-
+            "inoremap <expr> <Esc>      pumvisible() ? "\<C-e>" : "\<Esc>"
             let g:spf13_map_cr_omni_complete = 1
             if exists('g:spf13_map_cr_omni_complete')
                 inoremap <expr> <CR>     pumvisible() ? "\<C-y>" : "\<CR>"
