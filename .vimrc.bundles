@@ -111,6 +111,7 @@
             Bundle 'rdnetto/YCM-Generator'
             Bundle 'peterhoeg/vim-qml'
             Bundle 'Shougo/unite.vim'
+            Bundle 'KabbAmine/zeavim.vim'
             "Bundle 'Raimondi/delimitMate'
         endif
     "}
