@@ -313,7 +313,7 @@
         if count(g:spf13_bundle_groups, 'qt')
             Bundle 'peterhoeg/vim-qml'
             " A qmake project syntax add-on
-            Bundle 'artoj/qmake-syntax-vim'
+            Bundle 'ArkBriar/qmake-syntax-vim'
         endif
     " }
 
