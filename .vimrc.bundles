@@ -130,7 +130,7 @@
             Bundle 'bling/vim-bufferline'
             Bundle 'easymotion/vim-easymotion'
             Bundle 'jistr/vim-nerdtree-tabs'
-            Bundle 'flazz/vim-colorschemes'
+            Bundle 'ArkBriar/vim-colorschemes'
             Bundle 'mbbill/undotree'
             Bundle 'nathanaelkane/vim-indent-guides'
             if !exists('g:spf13_no_views')
@@ -305,7 +305,10 @@
             Bundle 'rdnetto/YCM-Generator'
             Bundle 'Shougo/unite.vim'
             Bundle 'KabbAmine/zeavim.vim'
-            Bundle 'jdkanani/vim-material-theme'
+            "Bundle 'jdkanani/vim-material-theme'
+            " This PaperColor is a newer version of the copy int
+            " vim-colorschemas
+            "Bundle 'NLKNguyen/papercolor-theme'
             "Bundle 'Raimondi/delimitMate'
         endif
     " }
