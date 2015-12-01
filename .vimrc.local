@@ -1,5 +1,5 @@
 set nospell     " spell check off
-set nonumber    " no line number
+au FileType javascript html set nonumber    " set no line number when opening a javascript or html file
 
 set scrolljump=8
 set scrolloff=5
@@ -26,7 +26,12 @@ set laststatus=2 " Always display the statusline in all windows
 "set showtabline=2 " Always display the tabline, even if there is only one tab
 set noshowmode
 
-colorscheme molokai
+if has('gui_running')
+    set background=dark
+    colorscheme material-theme
+else
+    colorscheme molokai
+endif
 
 syntax sync minlines=256
 syntax sync maxlines=2048

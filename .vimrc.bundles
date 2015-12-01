@@ -305,6 +305,7 @@
             Bundle 'rdnetto/YCM-Generator'
             Bundle 'Shougo/unite.vim'
             Bundle 'KabbAmine/zeavim.vim'
+            Bundle 'jdkanani/vim-material-theme'
             "Bundle 'Raimondi/delimitMate'
         endif
     " }
