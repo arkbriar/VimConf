@@ -31,11 +31,6 @@ flags = [
 '-x',
 'c++',
 
-# you shoold change this to make sure the path to c++ std include is correct
-'-I', '/usr/include',
-'-I', '/usr/include/c++/5',
-'-I', '/usr/include/c++/5/x86_64-suse-linux',
-
 # you should move this file to your project home to make this relative path work
 '-I', '.',
 '-I', 'include',

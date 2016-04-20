@@ -304,10 +304,10 @@
         if count(g:spf13_bundle_groups, 'other')
             Bundle 'xolox/vim-easytags'
             Bundle 'xolox/vim-misc'
-            Bundle 'rdnetto/YCM-Generator'
             Bundle 'Shougo/unite.vim'
             Bundle 'KabbAmine/zeavim.vim'
             Bundle 'vitalk/vim-simple-todo'
+            Bundle 'artur-shaik/vim-javacomplete2'
             "Bundle 'freitass/todo.txt-vim'
             "Bundle 'jdkanani/vim-material-theme'
             " This PaperColor is a newer version of the copy int
