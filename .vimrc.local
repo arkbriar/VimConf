@@ -1,6 +1,11 @@
 set nospell     " spell check off
 au FileType javascript,html set nonumber    " set no line number when opening a javascript or html file
 
+" java completion2
+au FileType java set omnifunc=javacomplete#Complete 
+nmap <F4> <Plug>(JavaComplete-Imports-AddSmart)
+imap <F4> <Plug>(JavaComplete-Imports-AddSmart)
+
 set scrolljump=8
 set scrolloff=5
 
