@@ -308,6 +308,8 @@
             Bundle 'KabbAmine/zeavim.vim'
             Bundle 'vitalk/vim-simple-todo'
             Bundle 'artur-shaik/vim-javacomplete2'
+            Bundle 'Chiel92/vim-autoformat'
+            "Bundle 'davidhalter/jedi-vim'
             "Bundle 'freitass/todo.txt-vim'
             "Bundle 'jdkanani/vim-material-theme'
             " This PaperColor is a newer version of the copy int

@@ -1,4 +1,4 @@
-set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+set fileencodings=utf-8,ucs-bom,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set nospell     " spell check off
 au FileType javascript,html set nonumber    " set no line number when opening a javascript or html file
 
@@ -12,6 +12,8 @@ nmap <F6> <Plug>(JavaComplete-Imports-AddMissing)
 imap <F6> <Plug>(JavaComplete-Imports-AddMissing)
 nmap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
 imap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
+
+au FileType c,cpp,java,python map = :Autoformat<CR>
 
 set scrolljump=8
 set scrolloff=5
@@ -71,3 +73,4 @@ else
 endif
 
 let g:go_fmt_autosave = 0
+
