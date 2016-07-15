@@ -74,12 +74,25 @@ endif
 
 let g:go_fmt_autosave = 0
 
-let g:pymode_python = 'python3'
+"let g:pymode_python = 'python3'
+"let g:pymode_lint = 0
+"let b:python_version2 = 0
+"let g:python_highlight_all = 1
 let g:ycm_python_binary_path = 'python3'
 " Reset the default syntastic python checker, default is python2
 " Pymode will take control of it
-let g:syntastic_python_checkers = []
+let g:syntastic_python_checkers = ['pyflakes']
+
+au FileType yaml set tabstop=2
+au FileType yaml set softtabstop=2
+au FileType yaml set shiftwidth=2
 
 if OSX() && has("gui_running")
     set guifont=Source\ Code\ Pro\ Semibold:h13,Andale\ Mono\ Regular:h12,Menlo\ Regular:h11,Consolas\ Regular:h12,Courier\ New\ Regular:h14
 endif
+
+" disable all scroll bars
+set guioptions-=r
+set guioptions-=R
+set guioptions-=l
+set guioptions-=L
