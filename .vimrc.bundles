@@ -55,7 +55,7 @@
     " Setup Bundle Support {
         " The next three lines ensure that the ~/.vim/bundle/ system works
         filetype off
-        set rtp+=~/.vim/bundle/vundle
+        set rtp+=~/.vim/bundle/Vundle.vim
         call vundle#rc()
     " }
 
@@ -74,7 +74,7 @@
 " Bundles {
 
     " Deps {
-        Bundle 'gmarik/vundle'
+        Bundle 'VundleVim/Vundle.vim'
         Bundle 'MarcWeber/vim-addon-mw-utils'
         Bundle 'tomtom/tlib_vim'
         if executable('ag')
@@ -208,8 +208,8 @@
     " Python {
         if count(g:spf13_bundle_groups, 'python')
             " Pick either python-mode or pyflakes & pydoc
-            "Bundle 'klen/python-mode'
-            "Bundle 'yssource/python.vim'
+            Bundle 'klen/python-mode'
+            Bundle 'yssource/python.vim'
             Bundle 'python_match.vim'
             Bundle 'pythoncomplete'
         endif

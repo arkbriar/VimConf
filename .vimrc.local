@@ -74,8 +74,8 @@ endif
 
 let g:go_fmt_autosave = 0
 
-"let g:pymode_python = 'python3'
-"let g:pymode_lint = 0
+let g:pymode_python = 'python3'
+let g:pymode_lint = 0
 "let b:python_version2 = 0
 "let g:python_highlight_all = 1
 let g:ycm_python_binary_path = 'python3'
