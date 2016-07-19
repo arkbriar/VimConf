@@ -96,3 +96,6 @@ set guioptions-=r
 set guioptions-=R
 set guioptions-=l
 set guioptions-=L
+
+" map ',z' to ':Dash' if dash.vim is loaded
+au VimEnter * if exists(':Dash') | exe "map <leader>z :Dash<CR>" | endif
