@@ -62,12 +62,12 @@ let g:ycm_key_invoke_completion = '<C-UP>'
 if has('gui_running')
     set lines=60        " 60 lines of text
     let g:AutoPairsShortcutBackInsert = '<C-h>'
-    inoremap <A-h> <Esc>h
-    inoremap <A-j> <Esc>j
-    inoremap <A-k> <Esc>k
-    inoremap <A-l> <Esc>l
-    inoremap <A-u> <Esc>u
-    inoremap <A-o> <Esc>o
+    "inoremap <A-h> <Esc>h
+    "inoremap <A-j> <Esc>j
+    "inoremap <A-k> <Esc>k
+    "inoremap <A-l> <Esc>l
+    "inoremap <A-u> <Esc>u
+    "inoremap <A-o> <Esc>o
 else 
     let g:AutoPairsShortcutBackInsert = '<C-h>'
 endif
@@ -109,3 +109,17 @@ function! SyntasticCheckHook(errors)
         let g:syntastic_loc_list_height = min([len(a:errors), 10])
     endif
 endfunction
+
+" Easymotion configuration
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+
+map  n <Plug>(easymotion-next)
+map  N <Plug>(easymotion-prev)
+
+" motions
+map <Leader>l <Plug>(easymotion-lineforward)
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+map <Leader>h <Plug>(easymotion-linebackward)
+
