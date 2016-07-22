@@ -100,7 +100,7 @@ set guioptions-=L
 " map ',z' to ':Dash' if dash.vim is loaded
 au VimEnter * if exists(':Dash') | exe "map <leader>z :Dash<CR>" | endif
 
-let g:syntastic_auto_loc_list = 2
+"let g:syntastic_auto_loc_list = 3
 let g:syntastic_go_checkers = ['go']
 
 function! SyntasticCheckHook(errors)
