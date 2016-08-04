@@ -75,20 +75,21 @@ endif
 let g:go_fmt_autosave = 0
 
 let g:pymode_python = 'python3'
-let g:pymode_lint = 0
+let g:pymode_lint = 1
 "let b:python_version2 = 0
 "let g:python_highlight_all = 1
 let g:ycm_python_binary_path = 'python3'
 " Reset the default syntastic python checker, default is python2
 " Pymode will take control of it
-let g:syntastic_python_checkers = ['pyflakes']
+let g:syntastic_python_checkers = []
 
-au FileType yaml set tabstop=2
-au FileType yaml set softtabstop=2
-au FileType yaml set shiftwidth=2
+" yaml, protobuf
+au FileType yaml,proto set tabstop=2
+au FileType yaml,proto set softtabstop=2
+au FileType yaml,proto set shiftwidth=2
 
 if OSX() && has("gui_running")
-    set guifont=Source\ Code\ Pro\ Semibold:h13,Andale\ Mono\ Regular:h12,Menlo\ Regular:h11,Consolas\ Regular:h12,Courier\ New\ Regular:h14
+    set guifont=Source\ Code\ Pro\ Semibold:h14,Andale\ Mono\ Regular:h12,Menlo\ Regular:h11,Consolas\ Regular:h12,Courier\ New\ Regular:h14
 endif
 
 " disable all scroll bars
@@ -123,3 +124,21 @@ map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 map <Leader>h <Plug>(easymotion-linebackward)
 
+" vim-go
+au FileType go nunmap <leader>gv
+au FileType go nmap <leader>gv <Plug>(go-def-vertical)
+
+nmap <leader>a= :Tabularize<CR>
+
+" Nerdcommenter
+"
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
