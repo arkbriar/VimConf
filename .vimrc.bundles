@@ -319,6 +319,10 @@
             "Bundle 'NLKNguyen/papercolor-theme'
             "Bundle 'Raimondi/delimitMate'
             Bundle 'uarun/vim-protobuf'
+            Bundle 'gilligan/vim-lldb'
+            Bundle 'mhinz/vim-startify'
+            Bundle 'Shougo/vimshell.vim'
+            Bundle 'Shougo/vimproc.vim'
         endif
     " }
 
