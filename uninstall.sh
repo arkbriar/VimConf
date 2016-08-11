@@ -13,6 +13,8 @@ die() {
 
 rm $HOME/.vimrc
 rm $HOME/.vimrc.bundles
+rm $HOME/.vimrc.local
+rm $HOME/.clang-format
 rm -rf $HOME/.vim
 
 rm -rf $app_dir
