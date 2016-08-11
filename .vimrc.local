@@ -105,16 +105,30 @@ set guioptions-=L
 " map ',z' to ':Dash' if dash.vim is loaded
 au VimEnter * if exists(':Dash') | exe "map <leader>z :Dash<CR>" | endif
 
-noremap <leader>S :SyntasticCheck<CR>
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_go_checkers = ['go']
+" syntastic {
+    noremap <leader>S :SyntasticCheck<CR>
+    let g:syntastic_auto_loc_list = 1
 
-function! SyntasticCheckHook(errors)
-    if !empty(a:errors)
-        let g:syntastic_loc_list_height = min([len(a:errors), 10])
-    endif
-endfunction
+    set statusline+=%#warningmsg#
+    set statusline+=%{SyntasticStatuslineFlag()}
+    set statusline+=%*
 
+    let g:syntastic_always_populate_loc_list = 1
+    let g:syntastic_auto_loc_list = 1
+    let g:syntastic_check_on_open = 0
+    let g:syntastic_check_on_wq = 0
+
+    let g:syntastic_go_checkers = ['go']
+
+    let g:syntastic_mode_map = { 'mode': 'passive' }
+
+    function! SyntasticCheckHook(errors)
+        if !empty(a:errors)
+            let g:syntastic_loc_list_height = min([len(a:errors), 10])
+        endif
+    endfunction
+" }
+"
 " Easymotion configuration
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
