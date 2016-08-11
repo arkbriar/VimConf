@@ -131,7 +131,7 @@
             Bundle 'bling/vim-bufferline'
             Bundle 'easymotion/vim-easymotion'
             Bundle 'jistr/vim-nerdtree-tabs'
-            Bundle 'ArkBriar/vim-colorschemes'
+            Bundle 'flazz/vim-colorschemes'
             Bundle 'mbbill/undotree'
             Bundle 'nathanaelkane/vim-indent-guides'
             if !exists('g:spf13_no_views')
@@ -323,6 +323,7 @@
             Bundle 'mhinz/vim-startify'
             Bundle 'Shougo/vimshell.vim'
             Bundle 'Shougo/vimproc.vim'
+            Bundle 'fatih/molokai'
         endif
     " }
 
