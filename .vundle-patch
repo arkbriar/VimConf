@@ -1,0 +1,13 @@
+diff --git a/autoload/vundle/scripts.vim b/autoload/vundle/scripts.vim
+index f789762..3cdca66 100644
+--- a/autoload/vundle/scripts.vim
++++ b/autoload/vundle/scripts.vim
+@@ -181,6 +181,8 @@ func! vundle#scripts#view(title, headers, results)
+   syn keyword vimCommand Bundle
+   syn keyword vimCommand Helptags
+ 
++  vertical resize 40
++
+   com! -buffer -bang -nargs=1 DeletePlugin
+     \ call vundle#installer#run('vundle#installer#delete', split(<q-args>,',')[0], ['!' == '<bang>', <args>])
+ 

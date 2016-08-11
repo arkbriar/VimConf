@@ -56,7 +56,7 @@
         " The next three lines ensure that the ~/.vim/bundle/ system works
         filetype off
         set rtp+=~/.vim/bundle/Vundle.vim
-        call vundle#rc()
+        call vundle#begin()
     " }
 
     " Add an UnBundle command {
@@ -349,4 +349,8 @@
     if filereadable(expand("~/.vimrc.bundles.local"))
         source ~/.vimrc.bundles.local
     endif
+" }
+
+" End vundle {
+    call vundle#end()
 " }
