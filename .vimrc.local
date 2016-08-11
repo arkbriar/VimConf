@@ -19,6 +19,8 @@ imap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
     au FileType go map = :GoFmt<CR>
 " }
 
+set nocursorline
+
 set scrolljump=8
 set scrolloff=5
 
