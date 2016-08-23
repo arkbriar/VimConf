@@ -26,12 +26,12 @@ syntax sync minlines=256
 syntax sync maxlines=2048
 
 if has('gui_running')
-    set columns=79        " 79 columns
+    set columns=80        " 80 columns
 endif
 
 " fonts
 if OSX() && has("gui_running")
-    set guifont=Source\ Code\ Pro\ Medium:h17,Andale\ Mono\ Regular:h12,Menlo\ Regular:h11,Consolas\ Regular:h12,Courier\ New\ Regular:h14
+    set guifont=Source\ Code\ Pro\ Medium:h15,Andale\ Mono\ Regular:h12,Menlo\ Regular:h11,Consolas\ Regular:h12,Courier\ New\ Regular:h14
 endif
 
 " filetypes
