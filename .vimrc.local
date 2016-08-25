@@ -1,4 +1,9 @@
-" Basics
+" Modeline and Notes {
+" vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={,} foldlevel=0 foldmethod=marker:
+"
+" }
+
+" Basics {
 set fileencodings=utf-8,ucs-bom,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set nospell     " spell check off
 
@@ -37,11 +42,12 @@ endif
 " filetypes
 au FileType javascript,html set nonumber    " set no line number when opening a javascript or html file
 
-au FileType javascript,yaml,proto set tabstop=2
-au FileType javascript,yaml,proto set softtabstop=2
-au FileType javascript,yaml,proto set shiftwidth=2
+au FileType html,javascript,yaml,proto set tabstop=2
+au FileType html,javascript,yaml,proto set softtabstop=2
+au FileType html,javascript,yaml,proto set shiftwidth=2
+" }
 
-" Plugins
+" Plugins {
 " java completion2 {
 if isdirectory(expand("~/.vim/bundle/vim-javacomplete2"))
     au FileType java set omnifunc=javacomplete#Complete 
@@ -93,9 +99,6 @@ endif
     " Pymode will take control of it
     let g:syntastic_python_checkers = []
 " }
-
-" map ',z' to ':Dash' if dash.vim is loaded
-au VimEnter * if exists(':Dash') | exe "map <leader>z :Dash<CR>" | endif
 
 " syntastic {
 if isdirectory(expand("~/.vim/bundle/syntastic"))
@@ -182,10 +185,24 @@ if isdirectory(expand("~/.vim/bundle/vim-indent-guides"))
 endif
 " }
 
-" Others
+" vim markdown {
+if isdirectory(expand("~/.vim/bundle/vim-markdown"))
+    let g:vim_markdown_frontmatter = 1
+    let g:vim_markdown_toml_frontmatter = 1
+    let g:vim_markdown_json_frontmatter = 1
+    let g:vim_markdown_conceal = 0
+endif
+" }
+
+" Others {
+" map ',z' to ':Dash' if dash.vim is loaded
+au VimEnter * if exists(':Dash') | exe "map <leader>z :Dash<CR>" | endif
+
 nmap <leader>a= :Tabularize<CR>
 
 nmap <F8> :TagbarToggle<CR>
 
 " disable auto pair fly mode
 let g:AutoPairsFlyMode = 0
+" }
+" }
