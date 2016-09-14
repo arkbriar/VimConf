@@ -223,6 +223,7 @@
             Bundle 'briancollins/vim-jst'
             Bundle 'kchmck/vim-coffee-script'
             Bundle 'mxw/vim-jsx'
+            Bundle 'othree/javascript-libraries-syntax.vim'
         endif
     " }
 
@@ -326,6 +327,7 @@
             Bundle 'Shougo/vimproc.vim'
             Bundle 'fatih/molokai'
             Bundle 'plasticboy/vim-markdown'
+            Bundle 'octol/vim-cpp-enhanced-highlight'
         endif
     " }
 

@@ -16,6 +16,7 @@ set scrolljump=8
 set scrolloff=5
 
 set wrap        " wrap long lines
+set wm=2
 
 " disable all scroll bars
 set guioptions-=r
@@ -36,7 +37,7 @@ endif
 
 " fonts
 if OSX() && has("gui_running")
-    set guifont=Source\ Code\ Pro\ Medium:h15,Andale\ Mono\ Regular:h12,Menlo\ Regular:h11,Consolas\ Regular:h12,Courier\ New\ Regular:h14
+    set guifont=Source\ Code\ Pro:h16,Andale\ Mono\ Regular:h12,Menlo\ Regular:h11,Consolas\ Regular:h12,Courier\ New\ Regular:h12
 endif
 
 " filetypes
@@ -45,6 +46,9 @@ au FileType javascript,html set nonumber    " set no line number when opening a 
 au FileType html,javascript,yaml,proto set tabstop=2
 au FileType html,javascript,yaml,proto set softtabstop=2
 au FileType html,javascript,yaml,proto set shiftwidth=2
+
+" C/Cpp indent
+set cino=N-s:0g0.75sh0.25s
 " }
 
 " Plugins {
