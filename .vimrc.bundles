@@ -112,7 +112,7 @@
             Bundle 'tpope/vim-surround'
             Bundle 'tpope/vim-repeat'
             "Bundle 'jiangmiao/auto-pairs'
-            Bundle 'ArkBriar/auto-pairs'
+            Bundle 'arkbriar/auto-pairs'
             Bundle 'rhysd/conflict-marker.vim'
             Bundle 'ctrlpvim/ctrlp.vim'
             Bundle 'tacahiroy/ctrlp-funky'
@@ -335,7 +335,7 @@
         if count(g:spf13_bundle_groups, 'qt')
             Bundle 'peterhoeg/vim-qml'
             " A qmake project syntax add-on
-            Bundle 'ArkBriar/vim-qmake'
+            Bundle 'arkbriar/vim-qmake'
         endif
     " }
 

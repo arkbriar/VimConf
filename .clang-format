@@ -8,3 +8,12 @@ ColumnLimit: 79
 IndentWidth: 4
 # We don't want OCLint pragmas to be reformatted.
 CommentPragmas: '^!OCLINT'
+---
+Language: Cpp
+IndentWidth: 2
+---
+Language: Java
+IndentWidth: 4
+---
+Language: Proto
+IndentWidth: 2

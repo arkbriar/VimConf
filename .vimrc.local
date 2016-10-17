@@ -16,7 +16,7 @@ set scrolljump=8
 set scrolloff=5
 
 set wrap        " wrap long lines
-set wm=2
+au FileType go set wm=2
 
 " disable all scroll bars
 set guioptions-=r
@@ -32,7 +32,7 @@ syntax sync minlines=256
 syntax sync maxlines=2048
 
 if has('gui_running')
-    set columns=80        " 80 columns
+    set columns=86        " 80 columns
 endif
 
 " fonts
@@ -43,12 +43,14 @@ endif
 " filetypes
 au FileType javascript,html set nonumber    " set no line number when opening a javascript or html file
 
-au FileType html,javascript,yaml,proto set tabstop=2
-au FileType html,javascript,yaml,proto set softtabstop=2
-au FileType html,javascript,yaml,proto set shiftwidth=2
+au FileType cpp,html,javascript,yaml,proto,toml set tabstop=2
+au FileType cpp,html,javascript,yaml,proto,toml set softtabstop=2
+au FileType cpp,html,javascript,yaml,proto,toml set shiftwidth=2
+
+au FileType cpp let g:indent_guides_exclude_filetypes=['cpp']
 
 " C/Cpp indent
-set cino=N-s:0g0.75sh0.25s
+set cino=N-sg0.5sh0.5sl1
 " }
 
 " Plugins {
@@ -69,6 +71,8 @@ endif
 " vim formats {
 if isdirectory(expand("~/.vim/bundle/vim-autoformat"))
     let g:formatters_java = ['clangformat', 'astyle_java']
+    let g:formatters_python = ['yapf', 'autopep8']
+    let g:formatter_yapf_style = 'pep8'
     au FileType c,cpp,java,python,protobuf map = :Autoformat<CR>
     au FileType go map = :GoFmt<CR>
 endif
