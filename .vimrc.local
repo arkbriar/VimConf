@@ -32,20 +32,20 @@ syntax sync minlines=256
 syntax sync maxlines=2048
 
 if has('gui_running')
-    set columns=86        " 80 columns
+    set columns=106        " 80 columns
 endif
 
 " fonts
 if OSX() && has("gui_running")
-    set guifont=Source\ Code\ Pro:h16,Andale\ Mono\ Regular:h12,Menlo\ Regular:h11,Consolas\ Regular:h12,Courier\ New\ Regular:h12
+    set guifont=Source\ Code\ Pro:h14,Andale\ Mono\ Regular:h12,Menlo\ Regular:h11,Consolas\ Regular:h12,Courier\ New\ Regular:h12
 endif
 
 " filetypes
 au FileType javascript,html set nonumber    " set no line number when opening a javascript or html file
 
-au FileType cpp,html,javascript,yaml,proto,toml set tabstop=2
-au FileType cpp,html,javascript,yaml,proto,toml set softtabstop=2
-au FileType cpp,html,javascript,yaml,proto,toml set shiftwidth=2
+au FileType c,cpp,html,javascript,yaml,proto,toml set tabstop=2
+au FileType c,cpp,html,javascript,yaml,proto,toml set softtabstop=2
+au FileType c,cpp,html,javascript,yaml,proto,toml set shiftwidth=2
 
 au FileType cpp let g:indent_guides_exclude_filetypes=['cpp']
 
@@ -106,6 +106,8 @@ endif
     " Reset the default syntastic python checker, default is python2
     " Pymode will take control of it
     let g:syntastic_python_checkers = []
+    " let g:pymode_folding = 0
+    let pymode_rope_completion = 0
 " }
 
 " syntastic {
@@ -170,6 +172,7 @@ if isdirectory(expand("~/.vim/bundle/nerdcommenter"))
                 \}
     " Add spaces after comment delimiters by default
     let g:NERDSpaceDelims = 1
+    au Filetype python let g:NERDSpaceDelims = 0 " Disable in python
     " Use compact syntax for prettified multi-line comments
     let g:NERDCompactSexyComs = 1
     " Align line-wise comment delimiters flush left instead of following code indentation

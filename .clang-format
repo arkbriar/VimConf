@@ -4,16 +4,20 @@
 # 2) use a four space indent rather than two spaces.
 #
 BasedOnStyle: Google
-ColumnLimit: 79
+ColumnLimit: 100
 IndentWidth: 4
 # We don't want OCLint pragmas to be reformatted.
 CommentPragmas: '^!OCLINT'
 ---
 Language: Cpp
+ColumnLimit: 100
 IndentWidth: 2
 ---
 Language: Java
+ColumnLimit: 100
 IndentWidth: 4
 ---
 Language: Proto
+ColumnLimit: 100
 IndentWidth: 2
+---

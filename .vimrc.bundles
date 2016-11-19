@@ -328,6 +328,7 @@
             Bundle 'fatih/molokai'
             Bundle 'plasticboy/vim-markdown'
             Bundle 'octol/vim-cpp-enhanced-highlight'
+            Bundle 'dag/vim-fish'
         endif
     " }
 
