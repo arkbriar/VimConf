@@ -37,7 +37,7 @@ endif
 
 " fonts
 if OSX() && has("gui_running")
-    set guifont=Source\ Code\ Pro:h14,Andale\ Mono\ Regular:h12,Menlo\ Regular:h11,Consolas\ Regular:h12,Courier\ New\ Regular:h12
+    set guifont=Source\ Code\ Pro:h15,Andale\ Mono\ Regular:h12,Menlo\ Regular:h11,Consolas\ Regular:h12,Courier\ New\ Regular:h12
 endif
 
 " filetypes
@@ -93,6 +93,7 @@ if isdirectory(expand("~/.vim/bundle/vim-easytags"))
     let g:easytags_file = '~/.vimtags'
     let g:easytags_async = 1
 
+    let g:easytags_dynamic_files = 2
     set tags=./.tags;,~/.vimtags
 endif
 " }

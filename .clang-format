@@ -11,7 +11,7 @@ CommentPragmas: '^!OCLINT'
 ---
 Language: Cpp
 ColumnLimit: 100
-IndentWidth: 2
+IndentWidth: 4
 ---
 Language: Java
 ColumnLimit: 100
