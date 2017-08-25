@@ -43,14 +43,14 @@ endif
 " filetypes
 au FileType javascript,html set nonumber    " set no line number when opening a javascript or html file
 
-au FileType c,cpp,html,javascript,yaml,proto,toml set tabstop=2
-au FileType c,cpp,html,javascript,yaml,proto,toml set softtabstop=2
-au FileType c,cpp,html,javascript,yaml,proto,toml set shiftwidth=2
+au FileType html,javascript,yaml,proto,toml,json set tabstop=2
+au FileType html,javascript,yaml,proto,toml,json set softtabstop=2
+au FileType html,javascript,yaml,proto,toml,json set shiftwidth=2
 
 au FileType cpp let g:indent_guides_exclude_filetypes=['cpp']
 
 " C/Cpp indent
-set cino=N-sg0.5sh0.5sl1
+" set cino=N-sg0.5sh0.5sl1
 " }
 
 " Plugins {
@@ -109,6 +109,14 @@ endif
     let g:syntastic_python_checkers = []
     " let g:pymode_folding = 0
     let pymode_rope_completion = 0
+" }
+
+" ale {
+if isdirectory(expand("~/.vim/bundle/ale"))
+    let g:ale_enabled = 0
+    au Filetype python let g:ale_enabled = 1
+    let g:ale_emit_conflict_warnings = 0
+endif
 " }
 
 " syntastic {

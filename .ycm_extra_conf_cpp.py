@@ -39,6 +39,7 @@ flags = [
 '-I', 'build',
 '-I', 'build/debug',
 '-I', 'build/release',
+'-I', '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/JavaVM.framework/Versions/A/Headers',
 ]
 
 compilation_database_folder = ''
