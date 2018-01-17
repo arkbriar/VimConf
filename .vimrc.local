@@ -82,6 +82,7 @@ endif
     let g:ycm_key_invoke_completion = '<C-UP>'
     autocmd FileType cpp let g:ycm_global_ycm_extra_conf = '~/.spf13-vim-3/.ycm_extra_conf_cpp.py'
     autocmd FileType c let g:ycm_global_ycm_extra_conf = '~/.spf13-vim-3/.ycm_extra_conf_c.py'
+    let g:ycm_confirm_extra_conf = 0
     "let g:ycm_filepath_completion_use_working_dir=1
 " }
 
@@ -100,14 +101,14 @@ endif
 
 " python {
     let g:pymode_python = 'python3'
-    let g:pymode_lint = 1
+    let g:pymode_lint = 0
     "let b:python_version2 = 0
     "let g:python_highlight_all = 1
     let g:ycm_python_binary_path = 'python3'
     " Reset the default syntastic python checker, default is python2
     " Pymode will take control of it
     let g:syntastic_python_checkers = []
-    " let g:pymode_folding = 0
+    let g:pymode_folding = 0
     let pymode_rope_completion = 0
 " }
 
