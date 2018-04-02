@@ -37,7 +37,7 @@ endif
 
 " fonts
 if OSX() && has("gui_running")
-    set guifont=Source\ Code\ Pro:h15,Andale\ Mono\ Regular:h12,Menlo\ Regular:h11,Consolas\ Regular:h12,Courier\ New\ Regular:h12
+    set guifont=Source\ Code\ Pro:h15,Andale\ Mono\ Regular:h15,Menlo\ Regular:h15,Consolas\ Regular:h15,Courier\ New\ Regular:h15
 endif
 
 " filetypes
